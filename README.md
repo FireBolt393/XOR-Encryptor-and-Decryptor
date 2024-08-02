@@ -48,6 +48,8 @@ You will be prompted to enter the key and the file name:
 `Enter the file name: yourfile.txt`
 
 ### Important Notes
+**Supported File Types**: This tool can be used to encrypt and decrypt files of any type or extension. 
+
 **Key Preservation:** The key generated during the encryption process is crucial. Without it, the encrypted file cannot be decrypted.
 
 **Base64 Encoding:** The encrypted files are encoded in Base64, which may increase the file size slightly.
