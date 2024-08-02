@@ -49,6 +49,7 @@ You will be prompted to enter the key and the file name:
 
 ### Important Notes
 **Key Preservation:** The key generated during the encryption process is crucial. Without it, the encrypted file cannot be decrypted.
+
 **Base64 Encoding:** The encrypted files are encoded in Base64, which may increase the file size slightly.
 
 ### Contributing
