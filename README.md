@@ -54,3 +54,6 @@ You will be prompted to enter the key and the file name:
 
 ### Contributing
 Feel free to fork this repository, make improvements, and submit pull requests. Contributions are welcome!
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
