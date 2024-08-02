@@ -15,8 +15,8 @@ Python 3.x
 ### Installation
 **Clone the repository:**
 
-`git clone https://github.com/FireBolt393/XOR-Encryptor-and-Decryptor.git
-cd XOR-Encryptor-and-Decryptor`
+`git clone https://github.com/FireBolt393/XOR-Encryptor-and-Decryptor.git`
+`cd XOR-Encryptor-and-Decryptor`
 
 ### Usage
 **Encrypting a File**
@@ -42,8 +42,8 @@ To decrypt a file, run the following command:
 
 You will be prompted to enter the key and the file name:
 
-`Enter the Decryption key: ABCD1234efgh5678
-Enter the file name: yourfile.txt`
+`Enter the Decryption key: ABCD1234efgh5678`
+`Enter the file name: yourfile.txt`
 
 ### Important Notes
 **Key Preservation:** The key generated during the encryption process is crucial. Without it, the encrypted file cannot be decrypted. Make sure to save the key in a secure location.
