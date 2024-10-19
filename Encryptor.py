@@ -33,6 +33,7 @@ try:
 
         with open(file, "wb") as f:
             f.write(encoded_message.encode())
+            f.flush()
 
     if __name__ == "__main__":
         file = input("Enter the file name: ")
