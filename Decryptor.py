@@ -28,6 +28,7 @@ try:
 
     with open(file, "wb") as f:
         f.write(decrypted_message)
+        f.flush()
 
 except Exception as e:
     print(e)
