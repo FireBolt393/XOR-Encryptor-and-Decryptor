@@ -1,22 +1,37 @@
+import os
 import random
 import base64
 
-try:
+print("""
 
-    def encrypt_file(file):
+   ____                       __          
+  / __/__  __________ _____  / /____  ____
+ / _// _ \/ __/ __/ // / _ \/ __/ _ \/ __/
+/___/_//_/\__/_/  \_, / .__/\__/\___/_/   
+                 /___/_/                  
+
+""")
+
+def encrypt(file):
+    try:
+
         # Generate a random key
-        chars = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+{}:|-=[]\:;'?/>.<,")
+        chars = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
         random.shuffle(chars)
         key = "".join(chars[1:17])
 
-        print(f"Key: {key}\n")
         min_index = 0
         max_index = len(key)
 
-        # for file in filePaths:
+        if __name__ == '__main__':
+            print(f"Key: {key}\n")
 
-        with open(file, "rb") as f:
-            message = f.read()
+            with open(file, "rb") as f:
+                message = f.read()
+                message = bytes(file.encode()) + b"|" + message
+                
+        else:
+            message = file.encode()
 
         encrypted_message = []
         for byte in message:
@@ -31,13 +46,18 @@ try:
         # Encode the encrypted message to base64
         encoded_message = base64.b64encode(bytes(encrypted_message)).decode()
 
-        with open(file, "wb") as f:
-            f.write(encoded_message.encode())
-            f.flush()
+        if __name__ == '__main__':
+            with open(file, "wb") as f:
+                f.write(encoded_message.encode())
+                f.flush()
+            os.rename(file, 'GetRekt.lol')
+        else:
+            return encoded_message, key
 
-    if __name__ == "__main__":
-        file = input("Enter the file name: ")
-        encrypt_file(file)
+    except Exception as e:
+        print(e)
 
-except Exception as e:
-    print(e)
+
+if __name__ == "__main__":
+    file = input("Enter the file name: ")
+    encrypt(file)
